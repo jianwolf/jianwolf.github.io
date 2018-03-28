@@ -25,11 +25,11 @@ li > ul, li > ol {
  * Links
  */
 a {
-	color: #2a7ae2;
+	color: #4885ed;
 	text-decoration: none;
 }
 a:visited {
-	color: #1756a9;
+	color: #4885ed;
 }
 a:hover {
 	color: #111;
