@@ -108,15 +108,15 @@ li > ol {
     gap: 1.5em;
 }
 
-.hobbies {
+.wrapper > section {
     margin-top: var(--spacing);
 }
 
-.hobbies li {
+.wrapper > section li {
     margin-bottom: 0.5rem;
 }
 
-.hobbies li:last-child {
+.wrapper > section li:last-child {
     margin-bottom: 0;
 }
 
