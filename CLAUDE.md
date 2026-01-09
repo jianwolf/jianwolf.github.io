@@ -21,7 +21,7 @@ This is a personal portfolio website (jianwang.me) hosted on GitHub Pages. It's 
 │   └── bootstrap.min.css  # Bootstrap 5 framework
 ├── resume_jianwang.pdf    # Linked resume
 ├── CNAME                   # Custom domain (jianwang.me)
-└── jian_*.jpg             # Profile photos
+└── jian_mount_si_washington.jpg  # Profile photo
 ```
 
 ## Typography
