@@ -15,12 +15,10 @@ This is a personal portfolio website (jianwang.me) hosted on GitHub Pages. It's 
 ## Architecture
 
 ```
-├── index.html              # Single-page site (all content here)
-├── css/
-│   ├── main.css           # Custom styles
-│   └── bootstrap.min.css  # Bootstrap 5 framework
-├── resume_jianwang.pdf    # Linked resume
-├── CNAME                   # Custom domain (jianwang.me)
+├── index.html                    # Single-page site (all content here)
+├── style.css                     # Custom styles with minimal grid
+├── resume_jianwang.pdf           # Linked resume
+├── CNAME                         # Custom domain (jianwang.me)
 └── jian_mount_si_washington.jpg  # Profile photo
 ```
 
@@ -31,13 +29,12 @@ This is a personal portfolio website (jianwang.me) hosted on GitHub Pages. It's 
 | Headings (H1) | Libre Baskerville | Bold (700) | Signals "I write, I think, I have taste." |
 | Headings (H2) | Libre Baskerville | Regular (400) | Same refined feel, lighter hierarchy |
 | Body | Inter | Regular (400) | Signals "I am modern, clean, and practical." |
-| Code | JetBrains Mono | Regular (400) | Signals "I am a serious engineer who cares about tooling." |
 
 Fonts loaded from Google Fonts with `display=swap` for performance.
 
 ## Key Constraints
 
-- Pure HTML/CSS only (no JavaScript)
-- Bootstrap 5 for responsive layout
-- Maintain mobile-first responsive design (breakpoints at 800px and 600px in main.css)
+- Pure HTML/CSS only (no JavaScript, no frameworks)
+- Custom minimal grid (~20 lines replaces Bootstrap)
+- Mobile-first responsive design (breakpoints at 576px for grid, 600px for profile photo)
 - Keep the minimal, clean aesthetic
