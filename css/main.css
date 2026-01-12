@@ -117,7 +117,16 @@ li > ol {
 .social-links {
     display: flex;
     flex-wrap: wrap;
-    gap: 1.5em;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.social-links a:not(:last-child)::after {
+    content: "·";
+    margin-left: 0.75em;
+    color: #999;
+    text-decoration: none;
+    display: inline-block;
 }
 
 .wrapper > section {
