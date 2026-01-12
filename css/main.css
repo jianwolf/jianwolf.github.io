@@ -9,9 +9,9 @@
 :root {
     --font-heading: "Libre Baskerville", Georgia, serif;
     --font-body: "Inter", system-ui, sans-serif;
-    --font-code: "JetBrains Mono", monospace;
     --color-link: #4885ed;
     --color-text: #111;
+    --color-muted: #999;
     --color-border: #e8e8e8;
     --spacing: 30px;
 }
@@ -20,14 +20,15 @@
    Base Elements
    ========================================================================== */
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 body {
     font-family: var(--font-body);
     line-height: 1.6;
-}
-
-code,
-pre {
-    font-family: var(--font-code);
 }
 
 a {
@@ -74,14 +75,26 @@ ol {
     margin-left: var(--spacing);
 }
 
-li > ul,
-li > ol {
-    margin-bottom: 0;
-}
-
 /* ==========================================================================
    Layout
    ========================================================================== */
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-inline: -0.75rem;
+}
+
+.col-sm-6 {
+    padding-inline: 0.75rem;
+    flex: 0 0 100%;
+}
+
+@media (min-width: 576px) {
+    .col-sm-6 {
+        flex: 0 0 50%;
+    }
+}
 
 .page-content {
     padding: var(--spacing) 0;
@@ -124,7 +137,7 @@ li > ol {
 .social-links a:not(:last-child)::after {
     content: "·";
     margin-left: 0.75em;
-    color: #999;
+    color: var(--color-muted);
     text-decoration: none;
     display: inline-block;
 }
@@ -157,11 +170,11 @@ li > ol {
     a[href^="http"]::after {
         content: " (" attr(href) ")";
         font-size: 0.75em;
-        color: #666;
+        color: var(--color-muted);
         word-break: break-all;
     }
 
-    :is(a[href^="mailto:"], a[href$=".pdf"], a[href*="amazon.com"], a[href*="garmin.com"])::after {
+    :is(a[href^="mailto:"], a[href$=".pdf"])::after {
         content: "";
     }
 }
