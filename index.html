@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
     <meta name="color-scheme" content="light">
     <meta name="description" content="Jian Wang - Senior Machine Learning Engineer at DoorDash, specializing in agentic AI, retrieval systems, and production GenAI at scale.">
     <meta name="author" content="Jian Wang">
@@ -13,18 +14,17 @@
     <meta property="og:description" content="Senior Machine Learning Engineer at DoorDash, specializing in agentic AI, retrieval systems, and production GenAI at scale.">
     <meta property="og:url" content="https://jianwang.me/">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://jianwang.me/jian_mount_si_washington.jpg">
+    <meta property="og:image" content="https://jianwang.me/images/jian_mount_si_washington_800.jpg">
     <meta name="twitter:card" content="summary">
 
     <title>Jian Wang</title>
     <link rel="canonical" href="https://jianwang.me/">
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400&family=Libre+Baskerville:wght@400;700&display=swap">
-
     <link rel="stylesheet" href="style.css">
+
+    <!-- Icons -->
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 
     <script type="application/ld+json">
     {
@@ -43,7 +43,7 @@
             "https://github.com/jianwolf",
             "https://jianwang.bearblog.dev/blog/"
         ],
-        "image": "https://jianwang.me/jian_mount_si_washington.jpg"
+        "image": "https://jianwang.me/images/jian_mount_si_washington_800.jpg"
     }
     </script>
 </head>
@@ -53,28 +53,44 @@
         <div class="wrapper">
             <header class="row profile">
                 <div class="col-sm-6">
-                    <img
-                        class="profile-photo"
-                        src="jian_mount_si_washington.jpg"
-                        alt="Jian Wang at Mount Si, Washington"
-                        width="320"
-                        height="320"
-                        fetchpriority="high"
-                        decoding="async"
-                    >
+                    <picture>
+                        <source
+                            type="image/avif"
+                            srcset="images/jian_mount_si_washington_400.avif 400w,
+                                    images/jian_mount_si_washington_800.avif 800w,
+                                    images/jian_mount_si_washington_1600.avif 1600w"
+                            sizes="320px"
+                        >
+                        <source
+                            type="image/webp"
+                            srcset="images/jian_mount_si_washington_400.webp 400w,
+                                    images/jian_mount_si_washington_800.webp 800w,
+                                    images/jian_mount_si_washington_1600.webp 1600w"
+                            sizes="320px"
+                        >
+                        <img
+                            class="profile-photo"
+                            src="images/jian_mount_si_washington_800.jpg"
+                            alt="Jian Wang at Mount Si, Washington"
+                            width="320"
+                            height="320"
+                            fetchpriority="high"
+                            decoding="async"
+                        >
+                    </picture>
                 </div>
                 <div class="col-sm-6">
                     <h1>Jian Wang</h1>
                     <p>
                         Hi! I'm a Senior Machine Learning Engineer at
-                        <a href="https://www.doordash.com/" rel="noopener">DoorDash</a>,
+                        <a href="https://www.doordash.com/">DoorDash</a>,
                         specializing in agentic AI, retrieval systems, and production GenAI at scale.
                     </p>
                     <p><a href="mailto:jianwang.data@gmail.com">jianwang.data@gmail.com</a></p>
                     <nav class="social-links" aria-label="Social links">
-                        <a href="https://linkedin.com/in/jianwang92" rel="noopener">LinkedIn</a>
-                        <a href="https://github.com/jianwolf" rel="noopener">GitHub</a>
-                        <a href="https://jianwang.bearblog.dev/blog/" rel="noopener">Blog</a>
+                        <a href="https://linkedin.com/in/jianwang92">LinkedIn</a>
+                        <a href="https://github.com/jianwolf">GitHub</a>
+                        <a href="https://jianwang.bearblog.dev/blog/">Blog</a>
                         <a href="resume_jianwang.pdf">Resume</a>
                     </nav>
                 </div>
